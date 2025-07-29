@@ -1,0 +1,18 @@
+**Google Colab** (short for Colaboratory) is a free cloud-based platform developed by Google that allows users to **write**, **execute**, and **share** Python code in a Jupyter Notebook environment, directly through a web browser. It’s especially popular among data scientists and researchers because it provides free access to powerful hardware accelerators, including GPUs (Graphics Processing Units) and TPUs (Tensor Processing Units). 
+**GPUs** are highly efficient at performing many calculations in parallel, making them ideal for tasks like training deep learning models, processing large datasets, and performing complex image or video computations. 
+**TPUs**, on the other hand, are specialized processors developed by Google specifically for accelerating machine learning workloads, particularly those using TensorFlow. 
+These hardware accelerators significantly reduce training time and computation costs. Colab comes pre-installed with popular Python libraries such as **NumPy**, **pandas**, **TensorFlow**, and **PyTorch**, and integrates seamlessly with **Google Drive**, making it easy to save, share, and collaborate on notebooks just like with Google Docs, no software installation required.
+
+
+| Tool / Library     | Reference (APA Style) | Link |
+|--------------------|-----------------------|------|
+| **Scanpy**         | Wolf, F. A., Angerer, P., & Theis, F. J. (2018). *Scanpy: large-scale single-cell gene expression data analysis*. Genome Biology, 19(1), 15.              | [https://doi.org/10.1186/s13059-017-1382-0](https://doi.org/10.1186/s13059-017-1382-0) |
+| **AnnData**        | Virshup, I., Rybakov, S., Theis, F. J., & Wolf, F. A. (2021). *AnnData: Annotated data for Python*. Bioinformatics.                                      | [https://anndata.readthedocs.io](https://anndata.readthedocs.io) |
+| **Pandas**         | McKinney, W. (2010). *Data structures for statistical computing in Python*. In Proceedings of the 9th Python in Science Conference (pp. 51–56).          | [https://doi.org/10.25080/Majora-92bf1922-00a](https://doi.org/10.25080/Majora-92bf1922-00a) |
+| **NumPy**          | Harris, C. R., et al. (2020). *Array programming with NumPy*. Nature, 585(7825), 357–362.                                                                 | [https://doi.org/10.1038/s41586-020-2649-2](https://doi.org/10.1038/s41586-020-2649-2) |
+| **Matplotlib**     | Hunter, J. D. (2007). *Matplotlib: A 2D graphics environment*. Computing in Science & Engineering, 9(3), 90–95.                                           | [https://doi.org/10.1109/MCSE.2007.55](https://doi.org/10.1109/MCSE.2007.55) |
+| **Seaborn**        | Waskom, M. L. (2021). *Seaborn: statistical data visualization*. Journal of Open Source Software, 6(60), 3021.                                            | [https://doi.org/10.21105/joss.03021](https://doi.org/10.21105/joss.03021) |
+| **scvi-tools**     | Gayoso, A., et al. (2022). *scvi-tools: A library for deep probabilistic analysis of single-cell omics data*. Nature Biotechnology, 40, 282–286.         | [https://doi.org/10.1038/s41587-021-01092-2](https://doi.org/10.1038/s41587-021-01092-2) |
+| **igraph**         | Csardi, G., & Nepusz, T. (2006). *The igraph software package for complex network research*. InterJournal, Complex Systems, 1695.                        | [http://igraph.org](http://igraph.org) |
+| **leidenalg**      | Traag, V. A., Waltman, L., & van Eck, N. J. (2019). *From Louvain to Leiden: guaranteeing well-connected communities*. Scientific Reports, 9(1), 5233.   | [https://doi.org/10.1038/s41598-019-41695-z](https://doi.org/10.1038/s41598-019-41695-z) |
+---
