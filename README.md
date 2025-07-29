@@ -2,25 +2,25 @@
 
 ## BACKGROUND
 
-**Single-cell genomics** is a field of biology focused on analyzing the genomes of **individual cells**. This approach allows scientists to study the unique genetic characteristics and variations within a population of cells, revealing insights that are often masked when studying cells in bulk. By examining individual cells, researchers can better understand cellular **diversity**, **identify new cell types**, and investigate how **genetic differences** contribute to various biological processes and diseases. 
+**Single-cell genomics** is a cutting-edge field within biology that focuses on the genomic analysis of individual cells, enabling a more **precise understanding** of cellular **heterogeneity**. Unlike bulk sequencing methods which average signals across large populations of cells, single-cell approaches uncover the unique genetic makeup and variability present at the individual cell level. This granularity allows researchers to explore **cellular diversity**, **discover novel cell types**, and investigate the role of **genetic variation** in development, disease progression, and treatment response.
 
-**RNA-seq (RNA sequencing)** is a next-generation sequencing (NGS) technique that sequences and quantifies the entire RNA content known as the transcriptome in a biological sample. The process involves isolating RNA from cells or tissues, converting it into complementary DNA (cDNA) using the enzyme reverse transcriptase, and then sequencing the cDNA fragments to determine both the identity and abundance of RNA molecules present.
+The most widely used technologies in single-cell studies is **RNA sequencing (RNA-seq)**. This next-generation sequencing (NGS) technique enables comprehensive profiling of the transcriptome, capturing both the identity and abundance of RNA molecules in a biological sample. The workflow typically involves RNA isolation, reverse transcription into complementary DNA (cDNA), and high-throughput sequencing. When applied to single cells, RNA-seq provides a powerful tool to dissect gene expression patterns at an unprecedented resolution.
 
-**Machine Learning (ML)** is area which is focused on **creating systems** and **algorithms** that can automatically **learn** from and make **predictions** or **decisions** based on data, without being explicitly programmed for each specific task.
+As single-cell RNA-seq (scRNA-seq) datasets grow in **size** and **complexity**, **Machine Learning (ML)** has emerged as a transformative approach for their analysis. ML encompasses computational techniques that learn from data to make predictions or decisions without relying on explicit programming for each task. In the context of scRNA-seq, ML models can be trained to improve tasks such as clustering, dimensionality reduction, cell type annotation, and biomarker discovery.
 
-**Ewing Sarcoma** is a rare malignant (cancerous) tumor that typically affects children, adolescents and young adults, most commonly between 10 and 20 years old. It usually develops in the long bones (such as the femur, tibia, or humerus), as well as the pelvis, ribs, and spine. The tumor likely originates from primitive nerve cells or stem cells in bone or soft tissue.
-It is the second most common bone cancer in young people, after osteosarcoma.
+This project is grounded in the study of **Ewing Sarcoma**, a rare but aggressive cancer primarily affecting children, adolescents, and young adults, typically between the ages of 10 and 20. Originating from primitive nerve or stem cells, this tumor often arises in the long bones, pelvis, ribs, or spine. As the second most common bone cancer in young people (after osteosarcoma), Ewing Sarcoma presents a compelling case for high-resolution, cell-level investigation to better understand its biology and discover diagnostic or therapeutic markers.
 
-## Objectives 
+The scRNA-seq data used in this study is publicly available on Kaggle and can be accessed [here](https://www.kaggle.com/datasets/alexandervc/rna-seq-data).
 
-### Main:
-Assess and compare the capability of conventional and ML-based pipelines in scRNAseq data analysis.
+## What We Want to Do
 
-### Specific:
+This study aims to **compare two approaches to analyzing single-cell RNA-seq data** from Ewing Sarcoma samples:
 
-1. Evaluate clustering ability and accuracy of each pipeline using quantitative metrics and low-dimensional visualizations.
-2. Determine the efficiency of each method in identifying biologically relevant and statistically significant Ewing Sarcoma genetic markers.
-3. Assess and compare the reproducibility of clustering, marker gene identification, and trajectory inference across three scRNA-seq datasets using both methods.
+- **Conventional (Normal) Pipeline:** Using established analysis steps such as quality control, normalization, dimensionality reduction, clustering, and marker gene identification with commonly used tools like Scanpy.
+
+- **Machine Learning-Based Pipeline:** Leveraging the scvi-tools framework, which employs deep probabilistic models (variational autoencoders) to learn latent representations of the data that can enhance clustering, integrate batch effects, improve gene expression denoising, and yield more robust biological insights.
+
+The comparison will focus on evaluating the performance of these pipelines regarding clustering quality, biological relevance of identified markers, reproducibility of results across datasets, and computational efficiency. This direct comparison will inform whether the advanced modeling capabilities of scvi-tools provide tangible benefits over conventional methods in analyzing complex single-cell datasets.
 
 ## RESULTS
 ---
